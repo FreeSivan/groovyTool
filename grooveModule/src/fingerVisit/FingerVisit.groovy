@@ -25,7 +25,6 @@ public class FingerVisit {
         return json
     }
 
-
     String dealEachFile(File file) {
         byte[] buffer = new byte[768];
         RandomAccessFile f = new RandomAccessFile(file, "r");
@@ -65,6 +64,7 @@ public class FingerVisit {
     }
 
     public static void main(String[] args) {
-
+        FingerVisit fingerVisit = new FingerVisit();
+        fingerVisit.mainLoop("/home/xiwen.yxw/afp/");
     }
 }
